@@ -595,7 +595,6 @@ input {
 }
 
 .footer__menu-link:hover {
-  background-color: #F16D7F !important;
-  z-index: 3;
+  background-color: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */
