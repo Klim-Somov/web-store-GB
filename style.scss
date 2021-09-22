@@ -190,16 +190,17 @@ button {
         flex-wrap: wrap;
         justify-content: space-between;
 
-       
+
     }
+
     &__item-acc {
         margin-top: 30px;
         height: 180px !important;
-        width: 100% !important ;
+        width: 100% !important;
         background-image: url(/img/accesoires-bg.jpg);
         background-repeat: no-repeat;
     }
-   
+
 
     &__item {
         position: relative;
@@ -270,10 +271,59 @@ button {
 
     &__item {
         max-width: 360px;
-        background: #F8F8F8;
         margin-bottom: 30px;
 
+
     }
+
+    &__item-img {}
+
+    &__item-img-bos {
+        position: relative;
+
+        &:hover {
+            .feature-products__item-hover {
+                opacity: 1;
+            }
+        }
+
+        cursor: pointer;
+    }
+
+    &__item-hover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        align-items: center;
+        background-color: rgba(58, 56, 56, 0.86);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        transition: all .5s;
+        height: 420px;
+        width: 360px;
+    }
+
+    &__item-hover-link {
+        position: relative;
+        width: 138px;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        opacity: .86;
+        padding: 13px 16px 13px 40px;
+        background-image: url(/img/hover-bucket.svg);
+        background-repeat: no-repeat;
+        text-align: center;
+        display: inline-block;
+        background-position-x: 11px;
+        background-position-y: 8px;
+        
+    }
+
 
     &__item-title {
         font-family: Lato;
@@ -307,10 +357,17 @@ button {
 
 .all-products-button {
     margin: 0 auto;
-    max-width: 212px;
+    width: 213px;
     margin-top: 20px;
-    white-space: nowrap;
+    transition: all .6s;
     margin-bottom: 95px;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: #F26376;
+
+
+    }
 }
 
 .all-products-btn {
@@ -324,6 +381,13 @@ button {
     left: 0;
     right: 0;
     padding: 15px 39px;
+    transition: all .5s;
+
+    &:hover {
+        color: #ffffff;
+
+    }
+
 }
 
 .advantages {
@@ -496,5 +560,10 @@ input {
         width: 148px;
         justify-content: space-between;
         margin: 23px 0;
+    }
+    &__menu-link {
+        &:hover {
+            background-color: #F16D7F;
+            
     }
 }

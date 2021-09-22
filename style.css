@@ -279,8 +279,59 @@ button {
 
 .feature-products__item {
   max-width: 360px;
-  background: #F8F8F8;
   margin-bottom: 30px;
+}
+
+.feature-products__item-img-bos {
+  position: relative;
+  cursor: pointer;
+}
+
+.feature-products__item-img-bos:hover .feature-products__item-hover {
+  opacity: 1;
+}
+
+.feature-products__item-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(58, 56, 56, 0.86);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  height: 420px;
+  width: 360px;
+}
+
+.feature-products__item-hover-link {
+  position: relative;
+  width: 138px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  opacity: .86;
+  padding: 13px 16px 13px 40px;
+  background-image: url(/img/hover-bucket.svg);
+  background-repeat: no-repeat;
+  text-align: center;
+  display: inline-block;
+  background-position-x: 11px;
+  background-position-y: 8px;
 }
 
 .feature-products__item-title {
@@ -312,10 +363,16 @@ button {
 
 .all-products-button {
   margin: 0 auto;
-  max-width: 212px;
+  width: 213px;
   margin-top: 20px;
-  white-space: nowrap;
+  -webkit-transition: all .6s;
+  transition: all .6s;
   margin-bottom: 95px;
+  white-space: nowrap;
+}
+
+.all-products-button:hover {
+  background-color: #F26376;
 }
 
 .all-products-btn {
@@ -329,6 +386,12 @@ button {
   left: 0;
   right: 0;
   padding: 15px 39px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.all-products-btn:hover {
+  color: #ffffff;
 }
 
 .advantages {
@@ -529,5 +592,10 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 23px 0;
+}
+
+.footer__menu-link:hover {
+  background-color: #F16D7F !important;
+  z-index: 3;
 }
 /*# sourceMappingURL=style.css.map */
