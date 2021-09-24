@@ -79,7 +79,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   height: 765px;
-  background-image: url(/img/bold-man.png);
+  background-image: url("../img/bold-man.png");
   background-repeat: no-repeat;
   background-position-x: -225px;
   background-position-y: bottom;
@@ -137,6 +137,7 @@ button {
   transition: all .6s;
   -webkit-box-shadow: inset -4px -2px 13px 1px;
           box-shadow: inset -4px -2px 13px 1px;
+  display: none;
 }
 
 .rightside-menu__btn {
@@ -193,11 +194,26 @@ button {
           justify-content: space-between;
 }
 
+.categories__item-women {
+  background-image: url("../img/categories__item-img1.jpg");
+  background-repeat: no-repeat;
+}
+
+.categories__item-men {
+  background-image: url("../img/categories__item-img2.jpg");
+  background-repeat: no-repeat;
+}
+
+.categories__item-kid {
+  background-image: url("../img/categories__item-img3.jpg");
+  background-repeat: no-repeat;
+}
+
 .categories__item-acc {
   margin-top: 30px;
   height: 180px !important;
   width: 100% !important;
-  background-image: url(/img/accesoires-bg.jpg);
+  background-image: url("../img/accesoires-bg.jpg");
   background-repeat: no-repeat;
 }
 
@@ -326,7 +342,7 @@ button {
   border: 1px solid #FFFFFF;
   opacity: .86;
   padding: 13px 16px 13px 40px;
-  background-image: url(/img/hover-bucket.svg);
+  background-image: url("../img/hover-bucket.svg");
   background-repeat: no-repeat;
   text-align: center;
   display: inline-block;
@@ -450,7 +466,7 @@ button {
 }
 
 .feedback {
-  background-image: url("/img/feedback-bg.jpg");
+  background-image: url("../web-store/img/feedback-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
