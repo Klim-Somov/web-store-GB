@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +35,71 @@ button {
   width: 1140px;
 }
 
+.video {
+  height: 420px;
+}
+
+.container-fluid {
+  width: 1900px;
+}
+
+.photo__slider {
+  position: relative;
+  z-index: 0;
+}
+
+.photo__slider .img {
+  z-index: 0;
+}
+
+.photo__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background: rgba(42, 42, 42, 0.15);
+}
+
+.photo__slider .slick-arrow.slick-next {
+  right: 0;
+  padding-left: 18px;
+  padding-right: 15px;
+  height: 47px;
+}
+
+.photo__slider .slick-arrow.slick-prev {
+  padding-left: 15px;
+  padding-right: 19px;
+  height: 47px;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+/*.............Header...........*/
 .header {
   background: #222222;
   height: 75px;
@@ -62,10 +128,61 @@ button {
   margin-right: 41px;
 }
 
-.right-menu {
-  margin-right: 31px;
+/*...........rightside-menu........*/
+.rightside-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 764px;
+  width: 232px;
+  background-color: #ffff;
+  z-index: 3;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  -webkit-box-shadow: inset -4px -2px 13px 1px;
+          box-shadow: inset -4px -2px 13px 1px;
+  display: none;
 }
 
+.rightside-menu__btn {
+  margin-top: 16px;
+  display: inline-block;
+  margin-left: 203px;
+}
+
+.rightside-menu__block {
+  margin-bottom: 20px;
+}
+
+.rightside-menu__title {
+  font-weight: bold;
+  color: #000000;
+  margin-top: 9px;
+  margin-bottom: 24px;
+  margin-left: 34px;
+}
+
+.rightside-menu__subtitle {
+  color: #F16D7F;
+  font-weight: normal;
+  margin-left: 33px;
+}
+
+.rightside-menu__list {
+  margin-left: 54.5px;
+  margin-top: 12px;
+}
+
+.rightside-menu__link {
+  color: #6F6E6E;
+  font-weight: normal;
+}
+
+.rightside-menu__item {
+  margin-bottom: 11px;
+}
+
+/*.............ofer.............*/
 .offer {
   background: #F1E4E6;
   position: relative;
@@ -125,59 +242,7 @@ button {
   color: #F16D7F;
 }
 
-.rightside-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 764px;
-  width: 232px;
-  background-color: #ffff;
-  z-index: 3;
-  -webkit-transition: all .6s;
-  transition: all .6s;
-  -webkit-box-shadow: inset -4px -2px 13px 1px;
-          box-shadow: inset -4px -2px 13px 1px;
-  display: none;
-}
-
-.rightside-menu__btn {
-  margin-top: 16px;
-  display: inline-block;
-  margin-left: 203px;
-}
-
-.rightside-menu__block {
-  margin-bottom: 20px;
-}
-
-.rightside-menu__title {
-  font-weight: bold;
-  color: #000000;
-  margin-top: 9px;
-  margin-bottom: 24px;
-  margin-left: 34px;
-}
-
-.rightside-menu__subtitle {
-  color: #F16D7F;
-  font-weight: normal;
-  margin-left: 33px;
-}
-
-.rightside-menu__list {
-  margin-left: 54.5px;
-  margin-top: 12px;
-}
-
-.rightside-menu__link {
-  color: #6F6E6E;
-  font-weight: normal;
-}
-
-.rightside-menu__item {
-  margin-bottom: 11px;
-}
-
+/*............categories........*/
 .categories {
   padding-top: 65px;
   padding-bottom: 96px;
@@ -960,7 +1025,7 @@ button {
 
 .pagination {
   margin: 0 auto;
-  max-width: 274px;
+  max-width: 299px;
   margin-bottom: 94px;
   margin-top: 20px;
 }
@@ -978,6 +1043,11 @@ button {
   border-radius: 4px;
 }
 
+.pagination .page-item-marg {
+  margin-right: 0 !important;
+  color: #EBEBEB;
+}
+
 .pagination .page-item {
   margin-right: 24px;
 }
@@ -990,7 +1060,128 @@ button {
   color: #EF5B70 !important;
 }
 
-.video {
-  height: 420px;
+.Women-collection {
+  position: relative;
+  border: 1px solid #EAEAEA;
+  margin-top: -73px;
+  z-index: 10;
+  background-color: #fff;
+  margin-bottom: 136px;
+}
+
+.Women-collection__title {
+  color: #F16D7F;
+  position: relative;
+  margin: 94px 0 27px;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.Women-collection__title::after {
+  content: "";
+  position: absolute;
+  background-color: #F16D7F;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 63px;
+  margin: 0 auto;
+}
+
+.Women-collection__subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.Women-collection__text {
+  text-align: center;
+  max-width: 555px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.Women-collection__price {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  text-align: center;
+  position: relative;
+  padding-bottom: 65px;
+  margin-bottom: 65px;
+}
+
+.Women-collection__price::after {
+  content: "";
+  position: absolute;
+  background-color: #EAEAEA;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 641px;
+  margin: 0 auto;
+}
+
+.Women-collection__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 48px;
+}
+
+.Women-collection__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Women-collection__list-item {
+  margin-right: 28px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.Women-collection__list-item::after {
+  content: url("../img/catalog-V.svg");
+  margin-left: 10px;
+}
+
+.Women-collection__btn {
+  width: 211px;
+  color: #F26376;
+  border: 1px solid #F26376;
+  padding: 13px 16px 13px 20px;
+  background-image: url("../img/red-bucket.svg");
+  background-repeat: no-repeat;
+  text-align: center;
+  display: block;
+  background-position-x: 11px;
+  background-position-y: 8px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.product-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 128px;
 }
 /*# sourceMappingURL=style.css.map */
