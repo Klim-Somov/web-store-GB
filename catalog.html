@@ -77,12 +77,83 @@
         </div>
     </div>
     <nav class="catalog-menu wraper">
-        <button class="catalog-menu__filter">FILTER</button>
+        
+            <details class="catalog-menu__burger">
+                <summary class="catalog-menu__filter">FILTER</summary>
+            
+                <details class="catalog-menu__details" open>
+                    <summary class="catalog-menu__title">CATEGORY</summary>
+                    <ul class="catalog-menu__b-list" >
+                        <li class="catalog-menu__b-list-item" >Accessories</li>
+                        <li class="catalog-menu__b-list-item" >Bags</li>
+                        <li class="catalog-menu__b-list-item" >Denim</li>
+                        <li class="catalog-menu__b-list-item" >Hoodies & Sweatshirts</li>
+                        <li class="catalog-menu__b-list-item" >Jackets & Coats</li>
+                        <li class="catalog-menu__b-list-item" >Polos</li>
+                        <li class="catalog-menu__b-list-item" >Shirts</li>
+                        <li class="catalog-menu__b-list-item" >Shoes</li>
+                        <li class="catalog-menu__b-list-item" >Sweaters & Knits</li>
+                        <li class="catalog-menu__b-list-item" >T-Shirts</li>
+                        <li class="catalog-menu__b-list-item" >Tanks</li>
+                    </ul>
+                </details>
+                <details class="catalog-menu__details" >
+                    <summary class="catalog-menu__title">BRAND</summary>
+                    <ul class="catalog-menu__b-list" >
+                        <li class="catalog-menu__b-list-item" >Accessories</li>
+                        <li class="catalog-menu__b-list-item" >Bags</li>
+                        <li class="catalog-menu__b-list-item" >Denim</li>
+                        <li class="catalog-menu__b-list-item" >Hoodies & Sweatshirts</li>
+                        <li class="catalog-menu__b-list-item" >Jackets & Coats</li>
+                        <li class="catalog-menu__b-list-item" >Polos</li>
+                        <li class="catalog-menu__b-list-item" >Shirts</li>
+                        <li class="catalog-menu__b-list-item" >Shoes</li>
+                        <li class="catalog-menu__b-list-item" >Sweaters & Knits</li>
+                        <li class="catalog-menu__b-list-item" >T-Shirts</li>
+                        <li class="catalog-menu__b-list-item" >Tanks</li>
+                    </ul>
+                </details>
+                <details class="catalog-menu__details" >
+                    <summary class="catalog-menu__title" >DESIGNER</summary>
+                    <ul class="catalog-menu__b-list" >
+                        <li class="catalog-menu__b-list-item" >Accessories</li>
+                        <li class="catalog-menu__b-list-item" >Bags</li>
+                        <li class="catalog-menu__b-list-item" >Denim</li>
+                        <li class="catalog-menu__b-list-item" >Hoodies & Sweatshirts</li>
+                        <li class="catalog-menu__b-list-item" >Jackets & Coats</li>
+                        <li class="catalog-menu__b-list-item" >Polos</li>
+                        <li class="catalog-menu__b-list-item" >Shirts</li>
+                        <li class="catalog-menu__b-list-item" >Shoes</li>
+                        <li class="catalog-menu__b-list-item" >Sweaters & Knits</li>
+                        <li class="catalog-menu__b-list-item" >T-Shirts</li>
+                        <li class="catalog-menu__b-list-item" >Tanks</li>
+                    </ul>
+                </details>
+            </details>
+        
         <nav class="catalog-menu__main">
             <ul class="catalog-menu__list">
-                <li class="catalog-menu__list-item">TRENDING NOW</li>
-                <li class="catalog-menu__list-item">SIZE </li>
-                <li class="catalog-menu__list-item">PRICE</li>
+                <li class="catalog-menu__list-item">
+                    <details class="catalog-menu__checkbox-details" >
+                        <summary class="catalog-menu__list-summ" >TRENDING NOW</summary>
+                        <ul class="catalog-menu__checkbox-list" >
+                            <li class="catalog-menu__checkbox-item" > <label class="catalog-menu__checkbox-label"><input class="catalog-menu__checkbox" type="checkbox" name="size" >XS</label></li>
+                            <li class="catalog-menu__checkbox-item" > <label class="catalog-menu__checkbox-label"><input class="catalog-menu__checkbox" type="checkbox" name="size" >S</label></li>
+                            <li class="catalog-menu__checkbox-item" > <label class="catalog-menu__checkbox-label"><input class="catalog-menu__checkbox" type="checkbox" name="size" >M</label></li>
+                            <li class="catalog-menu__checkbox-item" > <label class="catalog-menu__checkbox-label" ><input class="catalog-menu__checkbox" type="checkbox" name="size" >L</label></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="catalog-menu__list-item">
+                    <details>
+                        <summary class="catalog-menu__list-summ" >SIZE</summary>
+                    </details>
+                </li>
+                <li class="catalog-menu__list-item">
+                    <details>
+                        <summary class="catalog-menu__list-summ" >PRISE</summary>
+                    </details>
+                </li>
             </ul>
         </nav>
     </nav>
@@ -234,9 +305,9 @@
                 </div>
                 <div class="feature-products__item">
                     <div class="feature-products__item-img-bos">
-                        <video class="video" autoplay="autoplay" >
+                        <video class="video" autoplay="autoplay">
                             <source src="./img/VID_20170617_163904.mp4">
-                           </video>
+                        </video>
                         <div class="feature-products__item-hover">
                             <a href="#" class="feature-products__item-hover-link">
                                 Add to Cart
@@ -274,25 +345,27 @@
                         $52.00
                     </h6>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <div class="pagination wraper">
         <nav aria-label="Page navigation example">
             <ul class="pagination__list">
-              <li class="page-item"><a class="page-link" href="#"><img src="./img/pagination-prew.svg" alt=""></a></li>
-              <li class="page-item"><a class="page-link page-link-activ" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item page-item-marg "><a class="page-link" href="#">6</a></li>
-              <li class="page-item page-item-marg"><span>.....</span></li>
-              <li class="page-item"><a class="page-link" href="#">20</a></li>
-              <li class="page-item"><a class="page-link" href="#"><img src="./img/pagination-next.svg" alt=""></a></li>
+                <li class="page-item"><a class="page-link" href="#"><img src="./img/pagination-prew.svg" alt=""></a>
+                </li>
+                <li class="page-item"><a class="page-link page-link-activ" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item page-item-marg "><a class="page-link" href="#">6</a></li>
+                <li class="page-item page-item-marg"><span>.....</span></li>
+                <li class="page-item"><a class="page-link" href="#">20</a></li>
+                <li class="page-item"><a class="page-link" href="#"><img src="./img/pagination-next.svg" alt=""></a>
+                </li>
             </ul>
-          </nav>
+        </nav>
     </div>
 
     <section class="advantages">
