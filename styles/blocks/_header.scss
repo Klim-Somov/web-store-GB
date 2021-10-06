@@ -14,8 +14,19 @@
     }
 
     &__menu-item {
-        margin-right: 41px;
+        margin-left: 41px;
     }
-}
+    &__icon {
+        fill: #fff;
+        transition: all .5s;
+        &:hover{
+            fill: $main-color;
+            animation: jello-horizontal 1s;
+        }
+    }
+    }
+
+    
+
 
 

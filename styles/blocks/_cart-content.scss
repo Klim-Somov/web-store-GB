@@ -1,0 +1,250 @@
+.cart-content {
+    background: #FFFFFF;
+
+    &__iner {
+        margin-top: 96px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    
+
+
+    &__card {
+        display: flex;
+        width: 652px;
+        box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
+        margin-bottom: 90px;
+    }
+
+    &__card-img {
+        background-color: #F3EEEF;
+        max-width: 262px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__card-text {
+        margin-left: 31px;
+        padding-top: 22px;
+
+    }
+
+    &__right {
+        margin-top: 17px;
+    }
+
+
+
+    &__form {
+
+        fieldset {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            max-width: 360px;
+
+        }
+    }
+
+
+    &__form-title {
+
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+
+    }
+
+
+
+    &__form-placeholder {
+        margin-top: 20px;
+        padding: 13px 17px 16px 17px;
+        width: 360px;
+        border: 1px solid #A4A4A4;
+
+        &::placeholder {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+
+        }
+    }
+
+
+    &__form-btn {
+        margin-top: 23px;
+        border: 1px solid #A4A4A4;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        padding: 10px 14px 12px 15px;
+        max-width: 102px;
+       transition: all .5s;
+        &:hover {
+            animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            background-color: $main-color;
+            border-color: $main-color;
+            color: #FFFFFF;
+        }
+
+    }
+
+    &__bottom-btns {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 128px;
+
+        button {
+            border: 1px solid #A4A4A4;
+            padding: 17px 40px 16px 39px;
+            color: #000000;
+            font-weight: 300;
+            transition: all .6s;
+            &:hover {
+                background-color: $main-color;
+                color: #FFFFFF;
+                border-color: $main-color;
+                box-shadow:(17px 19px 24px rgba(0, 0, 0, 0.13)); ;
+            }
+        }
+    }
+
+    &__total {
+        background: #F5F3F3;
+        width: 360px;
+        height: 214px;
+        margin-top: 96px;
+
+    }
+
+    &__total-sub {
+        font-family: Lato;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        width: 108px;
+        padding-top: 39px;
+        margin-left: 218px;
+
+        span {
+            margin-left: 22px;
+
+        }
+    }
+
+
+
+    &__total-grand {
+        width: 170px;
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        padding-top: 12px;
+        margin-left: 153px;
+
+        span {
+            color: $main-color;
+            margin-left: 22px;
+            font-weight: 700;
+        }
+    }
+
+    &__total-btn {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        background: #F16D7F;
+        color: #FFFFFF;
+        padding: 16px 42px;
+        position: relative;
+        margin-top: 34px;
+        margin-left: 45px;
+        &:hover {
+            animation: jello-horizontal 0.9s both;
+        }
+        
+        &::before {
+            position: absolute;
+            content: "";
+            background: #E2E2E2;
+            height: 1px;
+            width: 275px;
+            left: 0;
+            right: 0;
+            top: -12px;
+            
+        }
+    }
+}
+
+.card-text {
+
+    &__title {
+
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+    }
+
+    &__subtitle {
+
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+    }
+
+    &__list {
+        margin-top: 42px;
+    }
+
+    &__list-item {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        color: #575757;
+        margin-bottom: 7px;
+
+        span {
+            color: $main-color;
+        }
+
+        input {
+            padding-left: 13px;
+            padding-right: 4px;
+            width: 41px;
+            vertical-align: middle;
+            border: 1px solid #EAEAEA;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #656565;
+            margin-left: 24px;
+        }
+    }
+}

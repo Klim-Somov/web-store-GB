@@ -13,7 +13,8 @@
         background-position-y: bottom;
         justify-content: flex-end;
         margin-right: 90px;
-
+        -webkit-animation: kenburns-top 1s ease-out  reverse both;
+        animation: kenburns-top 1s ease-out  reverse both;
     }
 
 
@@ -22,6 +23,7 @@
     &__text {
         position: relative;
         padding-left: 28px;
+        animation: slide-in-blurred-top 1.5s;
 
 
 

@@ -62,12 +62,13 @@ button {
         padding-left: 18px;
         padding-right: 15px;
         height: 47px;
+        background: url('../img/slider-next.svg');
+        background-repeat: no-repeat;
+        background: url('../img/slider-gray-bg.png');
+        
         &:hover {
-            .slider-svg {
-              fill: #F16D7F ;
-  
-                  
-            }
+            background: url('../img/slider-arrow-red-next.svg');
+           background-repeat: no-repeat;
         }
        
 
@@ -77,11 +78,14 @@ button {
         padding-left: 15px;
         padding-right: 19px;
         height: 47px;
+        background: url('../img/slider-prev.svg');
+        background-repeat: no-repeat;
         &:hover {
-            .slider-svg {
-                fill: #F16D7F;
+            
+            background: url('../img/slider-arrow-red-next.svg');
+            
                   
-            }
+            
         }
 
     }
@@ -89,14 +93,7 @@ button {
 }
 
 
-    /* Слайдер */
-    .slick-slider {}
-
-    /* Слайдер запущен */
-    .slick-slider.slick-initialized {}
-
-    /* Слайдер с точками */
-    .slick-slider.slick-dotted {}
+    
 
     /* Ограничивающая оболочка */
     .slick-list {
@@ -109,41 +106,15 @@ button {
     }
 
     /* Слайд */
-    .slick-slide {}
+   
+    .main-logo {
+      &:hover {
+	        animation: wobble-hor-bottom infinite 0.9s both;
+      }
+    }
 
-    /* Слайд активный (показывается) */
-    .slick-slide.slick-active {}
-
-    /* Слайд основной */
-    .slick-slide.slick-current {}
-
-    /* Слайд по центру */
-    .slick-slide.slick-center {}
-
-    /* Клонированный слайд */
-    .slick-slide.slick-cloned {}
-
-    /* Стрелка */
-    .slick-arrow {}
-
-    /* Стрелка влево */
-    .slick-arrow.slick-prev {}
-
-    /* Стрелка вправо */
-    .slick-arrow.slick-next {}
-
-    /* Стрелка не активная */
-    .slick-arrow.slick-disabled {}
-
-    /* Точки (булиты) */
-    .slick-dots {}
-
-    .slick-dots li {}
-
-    /* Активная точка */
-    .slick-dots li.slick-active {}
-
-    /* Элемент точки */
-
-    
-
+    input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
