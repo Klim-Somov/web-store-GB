@@ -1,0 +1,32 @@
+.header {
+    background: #222222;
+    height: 75px;
+    padding: 18px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu-item {
+        margin-left: 41px;
+    }
+    &__icon {
+        fill: #fff;
+        transition: all .5s;
+        &:hover{
+            fill: $main-color;
+            animation: jello-horizontal 1s;
+        }
+    }
+    }
+
+    
+
+
+

@@ -1,0 +1,65 @@
+
+.offer {
+    background: #F1E4E6;
+    position: relative;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        height: 765px;
+        background-image: url('../img/bold-man.png');
+        background-repeat: no-repeat;
+        background-position-x: -225px;
+        background-position-y: bottom;
+        justify-content: flex-end;
+        margin-right: 90px;
+        -webkit-animation: kenburns-top 1s ease-out  reverse both;
+        animation: kenburns-top 1s ease-out  reverse both;
+    }
+
+
+
+
+    &__text {
+        position: relative;
+        padding-left: 28px;
+        animation: slide-in-blurred-top 1.5s;
+
+
+
+        &::before {
+            position: absolute;
+            content: "";
+            height: 92px;
+            width: 12px;
+            background-color: $main-color;
+            left: 0;
+        }
+    }
+
+    &__title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 45px;
+        color: #222222;
+
+    }
+
+    &__subtitle {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.4px;
+        color: #222222;
+
+    }
+
+    &__subtitle-red {
+        color: $main-color;
+
+    }
+
+}
