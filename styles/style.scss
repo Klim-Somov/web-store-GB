@@ -294,12 +294,15 @@
         line-height: 13px;
         color: #000000;
         align-items: center;
-
+       
 
     }
-
+    &__input-w {
+        margin-left: 15px;
+    }
     &__input {
         margin-right: 10px;
+       
 
     }
 
@@ -843,7 +846,7 @@
 
 
 
-    
+
 
     &-btn {
         background: rgba(42, 42, 42, 0.15);
@@ -867,5 +870,247 @@
         &-right {
             right: 5px;
         }
+    }
+}
+
+@media (max-width:1200px) {
+
+    .wraper {
+        box-sizing: content-box;
+        max-width: calc(768px - 16px * 2);
+
+        padding: 0 5px;
+
+    }
+
+    .offer__text {
+        margin-right: 28px;
+
+        &::before {
+            top: -15px;
+        }
+
+
+    }
+
+    .offer__inner {
+        height: 368px;
+        margin-right: 0px;
+        // background-image: url('../img/bold-man-tablet.png');
+        background-position-x: 0px;
+        background-size: contain;
+    }
+
+    .offer__title {
+
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        color: #222222;
+        line-height: 30px;
+    }
+
+    .offer__subtitle {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+
+
+    }
+
+    .categories {
+        padding-top: 19px;
+        padding-bottom: 94px;
+
+        &__items {
+            gap: 19px;
+        }
+    }
+
+    .categories__item-women {
+        width: 232px;
+
+
+    }
+
+
+    .categories__item-men {
+
+        width: 232px;
+    }
+
+    .categories__item-kid {
+        width: 232px;
+    }
+
+    .categories__item {
+        height: 167px;
+        background-size: 100%;
+
+        &:last-child {
+            margin-top: 0;
+            
+
+            .categories__item-text {
+                top: -50px;
+            }
+        }
+    }
+
+    .advantages {
+        &__inner {
+            flex-direction: column;
+            
+        }
+
+        &__item {
+            margin: auto;
+            margin-top: 48px;
+
+            &:last-child {
+                margin-bottom: 64px;
+            }
+        }
+    }
+
+    .feedback {
+        height: 100%;
+        padding-bottom: 140px;
+    }
+
+    .feedback__content {
+        flex-direction: column;
+        margin-top: 10px;
+
+
+    }
+
+    .feedback__content-form {
+        margin: 0;
+        margin-top: 48px;
+    }
+
+    .feedback__content-card {
+        margin-top: 50px;
+    }
+
+    .feedback__form {
+
+        margin: auto;
+
+    }
+
+    .catalog-menu__main {
+
+        margin-right: 0;
+    }
+    .feature-products__item {
+        &:nth-child(3) { 
+            display: none;
+            
+        }
+    }
+
+    .feature-products__text {
+        margin-bottom: 73px;
+    }
+
+    .all-products-button {
+        margin-top: 0;
+        margin-bottom: 64px;
+    }
+    .pagination__list {
+        padding: 8px 12px 13px;
+        width: 294px;
+        margin: auto;
+    }
+}
+@media(max-width:767px){
+    .wraper {
+        width: 350px;
+    }
+    .offer__inner{
+        background-image: none;
+    }
+    
+    
+    .right-menu {
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+    .header__menu-item{
+        margin-right: 41px;
+        margin-left: 0;
+       
+    }
+    .header__right {
+    .header__menu-item{
+        &:last-child {
+            display: none;
+        }
+        &:nth-child(1){
+            margin-right: 0;
+        }
+    }
+
+    }
+    .categories__items {
+        gap: 32px;
+        &:nth-child(3){
+            display: none;
+        }
+    }
+    .categories__item {
+        
+        height: 247px;
+        width: 342px;
+
+
+       
+    }
+    .categories__item-acc {
+        height: 111px !important;
+        width: 343px;
+        background-size: cover;
+        background-position: center;
+        .categories__item-text {
+            top: 0;
+        }
+    }
+ 
+    .categories__item:last-child .categories__item-text {
+        top: 0px;
+    }
+    
+        
+    
+    .catalog-menu__main {
+        margin-right: -40px;
+    }
+    .catalog-menu__filter11 {
+        display: none;
+    }
+    .catalog-menu__burger summary {
+        margin-left: -17px;
+    }
+    .catalog-top__inner {
+        flex-direction: column;
+        padding-bottom: 46px;
+    }
+    .catalog-top__title {
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+    .catalog-menu__burger details {
+        margin-left: 30px;
+    }
+    .footer__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+        
     }
 }
