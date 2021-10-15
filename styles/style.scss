@@ -294,15 +294,17 @@
         line-height: 13px;
         color: #000000;
         align-items: center;
-       
+
 
     }
+
     &__input-w {
         margin-left: 15px;
     }
+
     &__input {
         margin-right: 10px;
-       
+
 
     }
 
@@ -896,7 +898,6 @@
     .offer__inner {
         height: 368px;
         margin-right: 0px;
-        // background-image: url('../img/bold-man-tablet.png');
         background-position-x: 0px;
         background-size: contain;
     }
@@ -952,7 +953,7 @@
 
         &:last-child {
             margin-top: 0;
-            
+
 
             .categories__item-text {
                 top: -50px;
@@ -963,7 +964,7 @@
     .advantages {
         &__inner {
             flex-direction: column;
-            
+
         }
 
         &__item {
@@ -1007,12 +1008,7 @@
 
         margin-right: 0;
     }
-    .feature-products__item {
-        &:nth-child(3) { 
-            display: none;
-            
-        }
-    }
+
 
     .feature-products__text {
         margin-bottom: 73px;
@@ -1022,134 +1018,258 @@
         margin-top: 0;
         margin-bottom: 64px;
     }
+
     .pagination__list {
         padding: 8px 12px 13px;
         width: 294px;
         margin: auto;
     }
+
     .registration__content {
         gap: 22px;
-    
+
     }
+
     .registration__top {
         // height: 148px;
     }
+
     .registration__main-link {
         display: inline-block;
         margin-top: 60px;
         margin-bottom: 60px;
     }
-}
-@media(max-width:767px){
-    .wraper {
-        width: 350px;
+
+    .cart-content__iner {
+        flex-direction: column;
     }
-    .offer__inner{
+
+    .cart-content__right {
+        gap: 15px;
+        display: flex;
+    }
+
+    .cart-content__total {
+        margin-top: 39px;
+    }
+
+    .cart-content__bottom-btns {
+        padding-bottom: 47px;
+        justify-content: space-evenly;
+        margin-top: 62px;
+
+        button {
+            font-size: 12px;
+            line-height: 14px;
+            padding: 10px 10px 10px 11px;
+
+        }
+    }
+
+    .cart-content__card {
+        margin: auto;
+        margin-top: 40px;
+    }
+    .product-item-3 {
+        display: none;
+    }
+   
+}
+
+@media(max-width:767px) {
+    .wraper {
+        max-width: 350px;
+    }
+
+    .offer__inner {
         background-image: none;
     }
-    
-    
+
+
     .right-menu {
         &:nth-child(2) {
             display: none;
         }
     }
-    .header__menu-item{
+
+    .header__menu-item {
         margin-right: 41px;
         margin-left: 0;
-       
+
     }
+
     .header__right {
-    .header__menu-item{
-        &:last-child {
-            display: none;
+        .header__menu-item {
+            &:last-child {
+                display: none;
+            }
+
+            &:nth-child(1) {
+                margin-right: 0;
+            }
         }
-        &:nth-child(1){
-            margin-right: 0;
+
+    }
+
+    .categories__items {
+        gap: 32px;
+
+        &:nth-child(3) {
+            display: none;
         }
     }
 
-    }
-    .categories__items {
-        gap: 32px;
-        &:nth-child(3){
-            display: none;
-        }
-    }
     .categories__item {
-        
+
         height: 247px;
         width: 342px;
 
 
-       
+
     }
+
     .categories__item-acc {
         height: 111px !important;
         width: 343px;
         background-size: cover;
         background-position: center;
+
         .categories__item-text {
             top: 0;
         }
     }
- 
+
     .categories__item:last-child .categories__item-text {
         top: 0px;
     }
-    
-        
-    
+
+
+
     .catalog-menu__main {
         margin-right: -40px;
     }
+
     .catalog-menu__filter11 {
         display: none;
     }
+
     .catalog-menu__burger summary {
         margin-left: -17px;
     }
+
     .catalog-top__inner {
         flex-direction: column;
         padding-bottom: 46px;
     }
+
     .catalog-top__title {
         margin-top: 24px;
         margin-bottom: 32px;
     }
+
     .catalog-menu__burger details {
         margin-left: 30px;
     }
+
     .footer__inner {
         flex-direction: column-reverse;
         align-items: center;
-        
+
     }
-.feedback__content-title {
- 
-font-size: 24px;
-line-height: 153.2%;
-}
-.feedback__content-form-text {
-    font-size: 14px;
-line-height: 21px;
 
-}
-.registration__content {
-    flex-direction: column;
-    font-style: normal;
+    .feedback__content-title {
 
-}
-.registration__right-text {
-    font-weight: 300;
-font-size: 16px;
-line-height: 19px;
+        font-size: 24px;
+        line-height: 153.2%;
+    }
 
-}
-.registration__right-list-item {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    
-}
+    .feedback__content-form-text {
+        font-size: 14px;
+        line-height: 21px;
+
+    }
+
+    .registration__content {
+        flex-direction: column;
+        font-style: normal;
+
+    }
+
+    .registration__right-text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    .registration__right-list-item {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    .catalog-menu__burger[open] {
+        width: 100vh;
+    }
+
+    .catalog-menu__burger {
+        width: 100vh;
+    }
+
+    .cart-content__right {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .cart-content__card-text {
+        padding-top: 13px;
+    }
+
+    .cart-content__card {
+        max-width: 358px;
+        max-height: 188px;
+    }
+
+    .card-text__list {
+        margin-top: 26px;
+    }
+
+    .card-text__list-item {
+
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 4px;
+    }
+
+    .card-text__subtitle {
+
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .card-text__title {
+
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .cart-content__card-img {
+        width: 144px;
+        height: 188px;
+    }
+
+    .registration__main-link {
+        display: inline-block;
+        align-self: center;
+    }
+
+    .registration__top {
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .product-cards {
+        flex-direction: column;
+    }
 }
