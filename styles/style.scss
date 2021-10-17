@@ -770,7 +770,7 @@
             left: 0;
             right: 0;
             height: 1px;
-            width: 641px;
+            width: 100%;
             margin: 0 auto;
 
         }
@@ -1073,6 +1073,10 @@
     .product-item-3 {
         display: none;
     }
+    .feature-products__item-img {
+
+        max-width: 100%;
+    }
    
 }
 
@@ -1272,4 +1276,11 @@
     .product-cards {
         flex-direction: column;
     }
+    .slider-box {
+        width: 375px;
+    }
+    .slider-img {
+        max-width: 100%;
+    }
+
 }
