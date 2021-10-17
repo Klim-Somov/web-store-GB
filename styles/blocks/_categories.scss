@@ -30,11 +30,7 @@
     }
 
     &__item-acc {
-        margin-top: 30px;
-        height: 180px !important;
-        width: 100% !important;
-        background-image: url('../img/accesoires-bg.jpg');
-        background-repeat: no-repeat;
+       
     }
 
 
@@ -44,6 +40,15 @@
         text-align: center;
         width: 360px;
         height: 260px;
+        &:last-child {
+            margin-top: 30px;
+            height: 180px ;
+            width: 100% ;
+            background-image: url('../img/accesoires-bg.jpg');
+            background-repeat: no-repeat;
+            
+
+        }
     }
 
     &__item-text {

@@ -71,7 +71,9 @@
         </div>
     </header>
     <div class="registration__top">
-        <h1 class="registration__main-link wraper">registration</h1>
+        <div class="wraper">
+            <h1 class="registration__main-link ">registration</h1>
+        </div>
     </div>
     <div class="wraper">
         <section class="registration__content">
@@ -81,14 +83,16 @@
                         <legend class="registration__title">Your Name</legend>
                         <input class="registration__placeholder" type="text" placeholder="First Name" required >
                         <input class="registration__placeholder" type="text" placeholder="Last Name" required  >
-                        <label>
-                            <div class="registration__radio"><input class="registration__input" type="radio" required 
-                                    name="gender" value="m" checked> Male</div>
-                        </label>
-                        <label>
-                            <div class="registration__radio"><input class="registration__input" type="radio" required 
-                                    name="gender" value="w"> Female</div>
-                        </label>
+                        <div class="registration__radio">
+                            <label>
+                                <input class="registration__input" type="radio" required
+                                        name="gender" value="m" checked> Male
+                            </label>
+                            <label>
+                                <input class="registration__input registration__input-w " type="radio" required
+                                        name="gender" value="w"> Female
+                            </label>
+                        </div>
 
                     </fieldset>
                     <fieldset class="registration__fieldset">
