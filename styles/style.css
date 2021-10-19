@@ -533,6 +533,14 @@ body {
   color: #5D5D5D;
 }
 
+.page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content 1fr  min-content;
+      grid-template-rows: -webkit-min-content 1fr  -webkit-min-content;
+      grid-template-rows: min-content 1fr  min-content;
+}
+
 ul {
   list-style-type: none;
 }
@@ -655,6 +663,13 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .header__menu-item {
   margin-left: 41px;
+  position: relative;
+}
+
+.header__menu-item-bucket-number {
+  position: absolute;
+  left: 25px;
+  top: -6px;
 }
 
 .header__icon {
@@ -1069,6 +1084,21 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
           box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
   margin-bottom: 90px;
+  position: relative;
+}
+
+.cart-content__btn {
+  position: absolute;
+  right: 28px;
+  top: 22px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.cart-content__btn:hover {
+  -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  border-color: #F16D7F;
 }
 
 .cart-content__card-img {
@@ -1353,6 +1383,17 @@ input[type="number"]::-webkit-inner-spin-button {
   max-width: 360px;
   margin-bottom: 30px;
   background: #F8F8F8;
+}
+
+.feature-products__item-link {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.feature-products__item-link:hover {
+  color: #EF5B70;
+  background: #bce3e7;
+  border-radius: 55%;
 }
 
 .feature-products__item-img-bos {
@@ -1796,6 +1837,14 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 17px;
   color: #636363;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.catalog-top .breadcrumps__link:hover {
+  color: #EF5B70;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .catalog-top .breadcrumps__link-active {
@@ -2180,11 +2229,17 @@ input[type="number"]::-webkit-inner-spin-button {
     max-width: calc(768px - 16px * 2);
     padding: 0 5px;
   }
+  .feature-products__item:nth-child(8) {
+    display: none;
+  }
   .offer__text {
     margin-right: 28px;
   }
   .offer__text::before {
     top: -15px;
+  }
+  .catalog-top {
+    max-width: 1000px;
   }
   .offer__inner {
     height: 368px;
@@ -2320,9 +2375,6 @@ input[type="number"]::-webkit-inner-spin-button {
   .cart-content__card {
     margin: auto;
     margin-top: 40px;
-  }
-  .product-item-3 {
-    display: none;
   }
   .feature-products__item-img {
     max-width: 100%;
