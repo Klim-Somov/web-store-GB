@@ -2379,6 +2379,9 @@ input[type="number"]::-webkit-inner-spin-button {
   .feature-products__item-img {
     max-width: 100%;
   }
+  .product-item-3 {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2479,12 +2482,6 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-  }
-  .catalog-menu__burger[open] {
-    width: 100vh;
-  }
-  .catalog-menu__burger {
-    width: 100vh;
   }
   .cart-content__right {
     -webkit-box-orient: vertical;

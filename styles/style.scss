@@ -1092,6 +1092,11 @@
 
         max-width: 100%;
     }
+    .product-item-3 {
+       
+        display: none;
+    
+}
    
 }
 
@@ -1138,6 +1143,7 @@
             display: none;
         }
     }
+   
 
     .categories__item {
 
@@ -1229,13 +1235,7 @@
 
     }
 
-    .catalog-menu__burger[open] {
-        width: 100vh;
-    }
-
-    .catalog-menu__burger {
-        width: 100vh;
-    }
+   
 
     .cart-content__right {
         flex-direction: column;
