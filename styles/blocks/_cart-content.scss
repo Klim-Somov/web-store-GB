@@ -16,6 +16,19 @@
         width: 652px;
         box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
         margin-bottom: 90px;
+        position: relative;
+    }
+    &__btn {
+        position: absolute;
+        right: 28px;
+        top: 22px;
+        transition: all .5s;
+        &:hover {
+            animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            
+            border-color: $main-color;
+           
+        }
     }
 
     &__card-img {

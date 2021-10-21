@@ -12,6 +12,12 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #5D5D5D;
+    
+}
+
+.page {
+    display: grid;
+    grid-template-rows:min-content 1fr  min-content;
 }
 
 ul {
