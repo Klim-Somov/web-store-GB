@@ -8,11 +8,11 @@
     z-index: 3;
     transition: all .6s;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    display: none;
+    display: block;
 
-    // &.rightside-menu--close {
-    //     transform: translateX(500%);
-    // }
+    &._close {
+        transform: translateX(500%);
+    }
 
     &__btn {
 

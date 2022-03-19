@@ -697,7 +697,12 @@ input[type="number"]::-webkit-inner-spin-button {
   transition: all .6s;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  display: none;
+  display: block;
+}
+
+.rightside-menu._close {
+  -webkit-transform: translateX(500%);
+          transform: translateX(500%);
 }
 
 .rightside-menu__btn {
@@ -2540,7 +2545,7 @@ input[type="number"]::-webkit-inner-spin-button {
             flex-direction: column;
   }
   .slider-box {
-    width: 375px;
+    width: 300px;
   }
   .slider-img {
     max-width: 100%;
